@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etEmployeeCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Employee Code" />
+
+    <EditText
+        android:id="@+id/etEmployeeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etEmployeeCode"
+        android:hint="Employee Name" />
+
+    <EditText
+        android:id="@+id/etEmployeeDepartment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etEmployeeName"
+        android:hint="Employee Department" />
+
+    <EditText
+        android:id="@+id/etEmployeeBasicSalary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etEmployeeDepartment"
+        android:hint="Employee Basic Salary"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etEmployeeBasicSalary"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Calculate Salary" />
+
+    <TextView
+        android:id="@+id/tvGrossSalary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCalculate"
+        android:layout_marginTop="16dp"
+        android:text="Gross Salary: "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvNetSalary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvGrossSalary"
+        android:layout_marginTop="8dp"
+        android:text="Net Salary: "
+        android:textSize="18sp" />
+
+</RelativeLayout>
+<!---->
